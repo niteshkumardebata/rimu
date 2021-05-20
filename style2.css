@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+header{
+    color: pink;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+body{
+    background:palevioletred;
+}
+
+.bg1{
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.bg2{
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.wishfont{
+    font-size: 30px;
+    color: black;
+    line-height: 60px;
+
+}

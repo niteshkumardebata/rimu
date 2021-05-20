@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="vdostyle.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+
+</head>
+<body>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+
+            <header>Birthday wishes from your loved ones &#9829</header>
+
+            <div class="videoplayer" id="videoPlayer">
+                <video width="100%" controls  id="myVideo">
+                    <source  type="video/mp4">
+                </video>
+            </div>
+
+          <div class="flex flex-wrap -m-4">
+
+
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="image" src="mj.jpg" alt="blog">
+                <img src="play.png" class="play-btn" onclick="playVideo('mj.mp4')">
+                <div class="p-6">
+                  <h1 class="textfont">Puchki & Julie</h1>                  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="image" src="rupu.jpg" alt="blog">
+                <img src="play.png" class="play-btn" onclick="playVideo('rupu.mp4')">
+                <div class="p-6">
+                  <h1 class="textfont">Rupu</h1>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="image" src="aj.jpg" alt="blog">
+                <img src="play.png" class="play-btn" onclick="playVideo('aj.mp4')">
+                <div class="p-6">
+                  <h1 class="textfont">Apa & Jiju</h1>                
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="p-4 md:w-1/3">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <img class="image" src="we.jpg" alt="blog">
+                  <img src="play.png" class="play-btn" onclick="playVideo('we.mp4')">
+                  <div class="p-6">
+                    <h1 class="textfont">Sugarplum</h1>              
+                  </div>
+                </div>
+            </div>
+
+
+          </div>
+        </div>
+    </section>
+
+    <script>
+      var videoplayer = document.getElementById("videoPlayer")
+      var myVideo = document.getElementById("myVideo")
+
+      function playVideo(file){
+        myVideo.src = file;
+        videoplayer.style.display = "block";
+      }
+
+    </script>
+
+</body>
+</html>
